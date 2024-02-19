@@ -72,6 +72,7 @@ GEM
     bindex (0.8.1)
     bootsnap (1.18.3)
       msgpack (~> 1.2)
+    browser (5.3.1)
     builder (3.2.4)
     capybara (3.40.0)
       addressable
@@ -163,6 +164,11 @@ GEM
     rails-html-sanitizer (1.6.0)
       loofah (~> 2.21)
       nokogiri (~> 1.14)
+    rails_performance (1.2.1)
+      browser
+      railties
+      redis
+      redis-namespace
     railties (7.0.8)
       actionpack (= 7.0.8)
       activesupport (= 7.0.8)
@@ -174,6 +180,8 @@ GEM
     rdoc (6.6.2)
       psych (>= 4.0.0)
     redis (4.8.1)
+    redis-namespace (1.11.0)
+      redis (>= 4)
     regexp_parser (2.9.0)
     reline (0.4.2)
       io-console (~> 0.5)
@@ -231,6 +239,7 @@ DEPENDENCIES
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.8)
+  rails_performance
   redis (~> 4.0)
   selenium-webdriver
   simple_form
